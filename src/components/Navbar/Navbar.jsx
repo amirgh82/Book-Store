@@ -21,6 +21,7 @@ export default function Navbar () {
             <Link to='/' className='nav-link'>
               صفحه اصلی
             </Link>
+            <span></span>
           </li>
           <li className='nav-list'>
             <Link to='/category' className='nav-link mx-5'>

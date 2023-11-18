@@ -56,3 +56,23 @@ nav {
 .logo a {
   font-family: logo;
 }
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  border-radius: 16px;
+  transition: all 0.3s ease-in;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
