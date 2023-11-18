@@ -1,0 +1,15 @@
+@import './reset.css';
+
+@font-face {
+  font-family: font;
+  src: url(/src/assets/fonts/B\ Koodak\ Bold_0.ttf);
+}
+
+@font-face {
+    font-family: logo;
+    src: url(/src/assets/fonts/NothingYouCouldDo-Regular.ttf);
+}
+
+:root {
+  --def-font: font;
+}
