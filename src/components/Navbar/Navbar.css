@@ -69,10 +69,24 @@ nav {
   width: 0;
   height: 2px;
   background-color: white;
-  border-radius: 16px;
-  transition: all 0.3s ease-in;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-link:hover::after{
-    width: 100%;
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover .arrow {
+  transform: rotate(270deg);
+}
+
+/* mobile navbar */
+
+
+.nav-list-mobile {
+  background-color: rgb(30 41 59);
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 16px;
 }
