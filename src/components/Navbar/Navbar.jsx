@@ -14,10 +14,10 @@ export default function Navbar () {
   const [isShowCategory, setIsShowCategory] = useState(false)
 
   return (
-    <div className='container m-auto lg:px-20 px-12 max-[500px]:px-0'>
+    <div className='m-auto'>
       {/* Start menu in desktop size */}
 
-      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8 rounded-b-2xl'>
+      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8'>
         <RiMenu4Fill
           onClick={() => setIsShowMenu(true)}
           className='text-5xl hidden max-[768px]:block'
