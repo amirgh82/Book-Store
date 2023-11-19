@@ -6,14 +6,16 @@ import { FaLinkedinIn } from 'react-icons/fa6'
 import { BsTwitterX } from 'react-icons/bs'
 import { RiCloseCircleLine } from 'react-icons/ri'
 import { RiMenu4Fill } from 'react-icons/ri'
-
 import { Link } from 'react-router-dom'
 
 export default function Navbar () {
+  // Management of menu display in mobile size
   const [isShowMenu, setIsShowMenu] = useState(false)
 
   return (
     <div className='container m-auto lg:px-20 px-12 max-[500px]:px-0'>
+      {/* Start menu in desktop size */}
+
       <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8 rounded-b-2xl'>
         <RiMenu4Fill
           onClick={() => setIsShowMenu(true)}
@@ -48,7 +50,9 @@ export default function Navbar () {
           ورود / ثبت نام
         </Link>
       </nav>
-      {/* navbar mobile size */}
+      {/* Complete menu in desktop size */}
+
+      {/* Start menu in mobile size */}
       <nav
         className={`nav-responsive overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
           isShowMenu ? 'flex' : 'hidden'
@@ -109,6 +113,7 @@ export default function Navbar () {
           </li>
         </ul>
       </nav>
+      {/* Complete menu in mobile size */}
     </div>
   )
 }
