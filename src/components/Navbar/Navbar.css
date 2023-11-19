@@ -81,8 +81,56 @@ nav {
   transform: rotate(270deg);
 }
 
-/* mobile navbar */
+.login:before {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: -4px;
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
+  border-radius: 6px;
+  z-index: -1;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 25%,
+    hsla(141, 54%, 86%, 1) 50%
+  );
+  background-size: 400%;
+  transition: opacity 1s ease-in-out;
+  animation: animate 20s linear infinite;
+}
 
+.login:hover {
+  transform: scale(1.1);
+  color: #0f0f0f;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:active {
+  background: none;
+  color: #000000;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* mobile navbar */
 
 .nav-list-mobile {
   background-color: rgb(30 41 59);
