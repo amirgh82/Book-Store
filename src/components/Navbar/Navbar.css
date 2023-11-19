@@ -1,0 +1,148 @@
+nav {
+  font-family: var(--def-font);
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+.logo a {
+  font-family: logo;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover .arrow {
+  transform: rotate(270deg);
+}
+
+.nav-submenu {
+  display: block;
+}
+
+.nav-list:hover > .nav-submenu {
+  display: block;
+}
+
+.login:before {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: -4px;
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
+  border-radius: 6px;
+  z-index: -1;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    hsla(141, 54%, 86%, 1) 0%,
+    hsla(333, 73%, 85%, 1) 25%,
+    hsla(141, 54%, 86%, 1) 50%
+  );
+  background-size: 400%;
+  transition: opacity 1s ease-in-out;
+  animation: animate 20s linear infinite;
+}
+
+.login:hover {
+  transform: scale(1.1);
+  color: #0f0f0f;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:active {
+  background: none;
+  color: #000000;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* mobile navbar */
+
+.nav-list-mobile {
+  background-color: rgb(30 41 59);
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 16px;
+}
