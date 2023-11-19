@@ -31,11 +31,21 @@ export default function Navbar () {
             </Link>
             <span></span>
           </li>
-          <li className='nav-list'>
+          <li className='nav-list relative'>
             <Link to='/category' className='nav-link mx-7 flex items-center'>
               دسته بندی ها
-              <IoIosArrowBack className='mr-1 arrow' />
             </Link>
+            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600'>
+              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 1</Link>
+              </li>
+              <li className='cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 2</Link>
+              </li>
+              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 3</Link>
+              </li>
+            </ul>
           </li>
           <li className='nav-list'>
             <Link to='/contact' className='nav-link'>
@@ -74,11 +84,22 @@ export default function Navbar () {
             </Link>
             <span></span>
           </li>
-          <li className='nav-list-mobile'>
-            <Link to='/category' className='nav-link-mobile flex items-center'>
+          <li className='nav-list-mobile relative'>
+            <Link className='nav-link-mobile flex items-center'>
               دسته بندی ها
               <IoIosArrowBack className='mr-1 arrow' />
             </Link>
+            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600'>
+              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 1</Link>
+              </li>
+              <li className='cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 2</Link>
+              </li>
+              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
+                <Link className='nav-submenu-link w-full'>تست 3</Link>
+              </li>
+            </ul>
           </li>
           <li className='nav-list-mobile'>
             <Link to='/contact' className='nav-link-mobile'>

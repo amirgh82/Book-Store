@@ -81,6 +81,14 @@ nav {
   transform: rotate(270deg);
 }
 
+.nav-submenu {
+  display: none;
+}
+
+.nav-list:hover > .nav-submenu {
+  display: block;
+}
+
 .login:before {
   position: absolute;
   content: '';
