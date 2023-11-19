@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 export default function Navbar () {
   // Management of menu display in mobile size
   const [isShowMenu, setIsShowMenu] = useState(false)
+  const [isShowCategory, setIsShowCategory] = useState(false)
 
   return (
     <div className='container m-auto lg:px-20 px-12 max-[500px]:px-0'>
@@ -85,21 +86,28 @@ export default function Navbar () {
             <span></span>
           </li>
           <li className='nav-list-mobile relative'>
-            <Link className='nav-link-mobile flex items-center'>
+            <span
+              onClick={() => setIsShowCategory(prev => !prev)}
+              className='nav-link-mobile flex items-center'
+            >
               دسته بندی ها
               <IoIosArrowBack className='mr-1 arrow' />
-            </Link>
-            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600'>
-              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
-                <Link className='nav-submenu-link w-full'>تست 1</Link>
-              </li>
-              <li className='cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
-                <Link className='nav-submenu-link w-full'>تست 2</Link>
-              </li>
-              <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
-                <Link className='nav-submenu-link w-full'>تست 3</Link>
-              </li>
-            </ul>
+            </span>
+            {isShowCategory ? (
+              <ul className='nav-submenu w-full rounded-2xl bg-slate-600 px-2 overflow-hidden mt-2'>
+                <li className=' mt-2 cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1 rounded-md'>
+                  <Link className='nav-submenu-link w-full'>تست 1</Link>
+                </li>
+                <li className='cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1 rounded-md'>
+                  <Link className='nav-submenu-link w-full'>تست 2</Link>
+                </li>
+                <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1 rounded-md'>
+                  <Link className='nav-submenu-link w-full'>تست 3</Link>
+                </li>
+              </ul>
+            ) : (
+              ''
+            )}
           </li>
           <li className='nav-list-mobile'>
             <Link to='/contact' className='nav-link-mobile'>
