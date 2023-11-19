@@ -82,7 +82,7 @@ nav {
 }
 
 .nav-submenu {
-  display: block;
+  display: none;
 }
 
 .nav-list:hover > .nav-submenu {

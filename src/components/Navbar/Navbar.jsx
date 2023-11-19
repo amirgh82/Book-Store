@@ -94,7 +94,11 @@ export default function Navbar () {
               <IoIosArrowBack className='mr-1 arrow' />
             </span>
             {isShowCategory ? (
-              <ul className='nav-submenu w-full rounded-2xl bg-slate-600 px-2 overflow-hidden mt-2'>
+              <ul
+                className={`nav-submenu ${
+                  isShowCategory ? 'block' : ''
+                }  w-full rounded-2xl bg-slate-600 px-2 overflow-hidden mt-2`}
+              >
                 <li className=' mt-2 cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1 rounded-md'>
                   <Link className='nav-submenu-link w-full'>تست 1</Link>
                 </li>
