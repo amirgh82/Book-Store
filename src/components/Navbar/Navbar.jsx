@@ -20,7 +20,7 @@ export default function Navbar () {
       <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8'>
         <RiMenu4Fill
           onClick={() => setIsShowMenu(true)}
-          className='text-5xl hidden max-[768px]:block'
+          className='text-5xl hidden cursor-pointer max-[768px]:block'
         />
         <h3 className='logo text-lg'>
           <Link to='/'>BoundlessBook</Link>
@@ -66,7 +66,7 @@ export default function Navbar () {
       {/* Start menu in mobile size */}
       <nav
         className={`nav-responsive overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
-          isShowMenu ? 'flex' : 'hidden'
+          isShowMenu ? 'block' : 'hidden'
         } flex-col bg-gray-700 w-7/12 h-3/4 fixed top-0 right-0`}
       >
         <div className='flex items-center justify-between mt-5 max-[400px]:flex-col-reverse'>
