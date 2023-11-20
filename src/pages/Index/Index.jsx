@@ -7,7 +7,7 @@ export default function Index () {
   return (
     <>
       <Navbar />
-      {/* <Landing /> */}
+      <Landing />
     </>
   )
 }
