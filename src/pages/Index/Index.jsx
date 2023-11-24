@@ -3,6 +3,7 @@ import './Index.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import Category from '../../components/Category/Category'
+import Banner from '../../components/Banner/Banner'
 
 export default function Index () {
   return (
@@ -10,6 +11,7 @@ export default function Index () {
       <Navbar />
       <Landing />
       <Category />
+      <Banner />
     </>
   )
 }
