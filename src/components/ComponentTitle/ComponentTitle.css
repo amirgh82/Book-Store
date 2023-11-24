@@ -1,0 +1,35 @@
+.title {
+  font-family: var(--def-font);
+  width: 350px;
+  margin: 0 auto;
+}
+.title::before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.title::after {
+  content: '';
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    width: 200px;
+  }
+  .title::before {
+    width: 40px;
+    right: -15px;
+  }
+  .title::after {
+    width: 40px;
+    left: -15px;
+  }
+}
