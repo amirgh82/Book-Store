@@ -1,0 +1,25 @@
+.landing {
+  background-image: url(/src/assets/images/vibrant_books.jpg);
+  height: 85vh;
+}
+
+.content-text {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.content-title {
+  font-family: test;
+}
+.content-desc {
+  font-family: var(--def-font);
+}
+
+.content-input input {
+  font-family: var(--def-font);
+}
+.content-input input::placeholder {
+  font-family: var(--def-font);
+}

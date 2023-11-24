@@ -14,13 +14,13 @@ export default function Navbar () {
   const [isShowCategory, setIsShowCategory] = useState(false)
 
   return (
-    <div className='container m-auto lg:px-20 px-12 max-[500px]:px-0'>
+    <div className='m-auto'>
       {/* Start menu in desktop size */}
 
-      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8 rounded-b-2xl'>
+      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8'>
         <RiMenu4Fill
           onClick={() => setIsShowMenu(true)}
-          className='text-5xl hidden max-[768px]:block'
+          className='text-5xl hidden cursor-pointer max-[768px]:block'
         />
         <h3 className='logo text-lg'>
           <Link to='/'>BoundlessBook</Link>
@@ -65,8 +65,8 @@ export default function Navbar () {
 
       {/* Start menu in mobile size */}
       <nav
-        className={`nav-responsive overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
-          isShowMenu ? 'flex' : 'hidden'
+        className={`nav-responsive z-50 overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
+          isShowMenu ? 'block' : 'hidden'
         } flex-col bg-gray-700 w-7/12 h-3/4 fixed top-0 right-0`}
       >
         <div className='flex items-center justify-between mt-5 max-[400px]:flex-col-reverse'>

@@ -9,6 +9,10 @@
     font-family: logo;
     src: url(/src/assets/fonts/NothingYouCouldDo-Regular.ttf);
 }
+@font-face {
+    font-family: test;
+    src: url(/src/assets/fonts/AGhasem.ttf);
+}
 
 :root {
   --def-font: font;
