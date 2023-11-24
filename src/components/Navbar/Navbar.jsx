@@ -65,7 +65,7 @@ export default function Navbar () {
 
       {/* Start menu in mobile size */}
       <nav
-        className={`nav-responsive overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
+        className={`nav-responsive z-50 overflow-y-auto rounded-bl-2xl hidden	text-white px-5 transition-all max-[768px]:${
           isShowMenu ? 'block' : 'hidden'
         } flex-col bg-gray-700 w-7/12 h-3/4 fixed top-0 right-0`}
       >
