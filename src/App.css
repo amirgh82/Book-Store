@@ -6,14 +6,34 @@
 }
 
 @font-face {
-    font-family: logo;
-    src: url(/src/assets/fonts/NothingYouCouldDo-Regular.ttf);
+  font-family: logo;
+  src: url(/src/assets/fonts/NothingYouCouldDo-Regular.ttf);
 }
 @font-face {
-    font-family: test;
-    src: url(/src/assets/fonts/AGhasem.ttf);
+  font-family: test;
+  src: url(/src/assets/fonts/AGhasem.ttf);
 }
 
 :root {
   --def-font: font;
+  --bg-color: #1e293b;
+  --bg-color-light: #f0e7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
