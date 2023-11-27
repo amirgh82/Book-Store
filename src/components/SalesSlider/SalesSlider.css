@@ -1,0 +1,15 @@
+.card-book {
+  font-family: var(--def-font);
+}
+
+.swiper-pagination{
+    bottom: 352px !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: #1E293B !important;
+
+}
+.swiper-pagination-bullet-active{
+
+}

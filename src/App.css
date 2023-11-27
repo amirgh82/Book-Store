@@ -23,8 +23,11 @@
 }
 
 .container {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 640px) {

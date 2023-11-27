@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Landing from '../../components/Landing/Landing'
 import Category from '../../components/Category/Category'
 import Banner from '../../components/Banner/Banner'
+import SalesSlider from '../../components/SalesSlider/SalesSlider'
 
 export default function Index () {
   return (
@@ -12,6 +13,7 @@ export default function Index () {
       <Landing />
       <Category />
       <Banner />
+      <SalesSlider />
     </>
   )
 }
