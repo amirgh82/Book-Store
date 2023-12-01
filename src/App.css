@@ -14,6 +14,11 @@
   src: url(/src/assets/fonts/AGhasem.ttf);
 }
 
+@font-face {
+  font-family: yekan;
+  src: url(/src/assets/fonts/Yekan.ttf);
+}
+
 :root {
   --def-font: font;
   --bg-color: #1e293b;
@@ -28,6 +33,7 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  font-family: yekan;
 }
 
 @media screen and (max-width: 1268px) {
