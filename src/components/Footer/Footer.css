@@ -1,0 +1,16 @@
+.footer-title {
+  font-family: var(--def-font);
+  position: relative;
+}
+
+
+
+.footer-title::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: blueviolet;
+}

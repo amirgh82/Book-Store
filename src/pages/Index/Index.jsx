@@ -5,6 +5,7 @@ import Landing from '../../components/Landing/Landing'
 import Category from '../../components/Category/Category'
 import Banner from '../../components/Banner/Banner'
 import SalesSlider from '../../components/SalesSlider/SalesSlider'
+import Footer from '../../components/Footer/Footer'
 
 export default function Index () {
   return (
@@ -15,6 +16,7 @@ export default function Index () {
       <Banner />
       <SalesSlider componentTitle='پرفروش ترین کتاب ها' />
       <SalesSlider componentTitle='جدیدترین کتاب ها' />
+      <Footer />
     </>
   )
 }
