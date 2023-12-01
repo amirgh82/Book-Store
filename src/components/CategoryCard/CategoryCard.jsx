@@ -6,10 +6,10 @@ export default function CategoryCard ({ categoryName }) {
   return (
     <Link
       to='/'
-      class='card w-full bg-slate-800 mt-8 cursor-pointer rounded-2xl mx-auto'
+      className='card w-full bg-slate-800 mt-8 cursor-pointer rounded-2xl mx-auto'
     >
-      <div class='overlay'></div>
-      <div class='circle'>
+      <div className='overlay'></div>
+      <div className='circle'>
         <IoBookOutline className='text-6xl text-white' />
       </div>
       <p className='text-white'>{categoryName}</p>
