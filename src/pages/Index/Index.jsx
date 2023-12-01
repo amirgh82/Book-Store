@@ -13,7 +13,8 @@ export default function Index () {
       <Landing />
       <Category />
       <Banner />
-      <SalesSlider />
+      <SalesSlider componentTitle='پرفروش ترین کتاب ها' />
+      <SalesSlider componentTitle='جدیدترین کتاب ها' />
     </>
   )
 }

@@ -11,10 +11,10 @@ import 'swiper/css/pagination'
 import { EffectFade, Pagination } from 'swiper/modules'
 import { Link } from 'react-router-dom'
 
-export default function SalesSlider () {
+export default function SalesSlider ({ componentTitle }) {
   return (
-    <div className='container sliders h-auto mt-8 mb-32'>
-      <ComponentTitle title='پرفروش ترین ها کتاب ها' />
+    <div className='container sliders h-auto mt-8'>
+      <ComponentTitle title={componentTitle} />
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
