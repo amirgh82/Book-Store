@@ -9,29 +9,41 @@ export default function Footer () {
           <h6 className='footer-title text-lg mb-5'>دسترسی سریع</h6>
           <ul className='footer-access-lists'>
             <li className='footer-access-list py-1'>
-              <Link to='/' className='footer-access-link hover:text-cyan-500 transition-colors delay-100'>
+              <Link
+                to='/'
+                className='footer-access-link hover:text-cyan-500 transition-colors delay-100'
+              >
                 صفحه اصلی
               </Link>
             </li>
             <li className='footer-access-list py-1'>
-              <Link to='/' className='footer-access-link hover:text-cyan-500 transition-colors delay-100'>
+              <Link
+                to='/'
+                className='footer-access-link hover:text-cyan-500 transition-colors delay-100'
+              >
                 دسته بندی ها
               </Link>
             </li>
             <li className='footer-access-list py-1'>
-              <Link to='/' className='footer-access-link hover:text-cyan-500 transition-colors delay-100'>
+              <Link
+                to='/'
+                className='footer-access-link hover:text-cyan-500 transition-colors delay-100'
+              >
                 ثبت نام / ورود
               </Link>
             </li>
             <li className='footer-access-list py-1'>
-              <Link to='/' className='footer-access-link hover:text-cyan-500 transition-colors delay-100'>
+              <Link
+                to='/'
+                className='footer-access-link hover:text-cyan-500 transition-colors delay-100'
+              >
                 تماس با ما
               </Link>
             </li>
           </ul>
         </div>
 
-        <div className='footer-about w-5/12'>
+        <div className='footer-about w-5/12 max-[768px]:w-full max-[768px]:py-4'>
           <h6 className='footer-title text-lg mb-5'>درباره ما</h6>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
