@@ -30,13 +30,13 @@ export default function Landing () {
           />
         </p>
       </div>
-      <div className='content-input mt-24 relative flex items-center w-6/12'>
+      <div className='content-input mt-24 relative flex items-center w-4/12 max-[800px]:w-10/12'>
         <input
           type='text'
           name=''
           id=''
           placeholder='دنبال چی می گردی؟'
-          className=' border-none text-slate-800 outline-cyan-800 w-full rounded-2xl p-2 placeholder:text-slate-800 max-[450px]:w-72'
+          className=' border-none text-slate-800 outline-cyan-800 w-full rounded-2xl p-2 placeholder:text-slate-800'
         />
         <button className=' text-slate-900 absolute left-0 px-2 text-2xl'>
           <FaSearch />
