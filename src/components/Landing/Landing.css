@@ -23,3 +23,7 @@
 .content-input input::placeholder {
   font-family: var(--def-font);
 }
+
+.Typewriter__cursor{
+  display: none;
+}
