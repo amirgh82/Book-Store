@@ -7,7 +7,7 @@ export default function Category () {
   return (
     <div className='container category my-8 text-center mx-auto'>
       <ComponentTitle title='دسته بندی کتاب ها' />
-      <div className='categories grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto mx-auto w-full'>
+      <div className='categories grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto mx-auto w-full'>
         <CategoryCard categoryName='جنایی' />
         <CategoryCard categoryName='معامایی' />
         <CategoryCard categoryName='تاریخی' />

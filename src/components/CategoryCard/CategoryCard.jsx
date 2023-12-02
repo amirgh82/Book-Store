@@ -6,7 +6,7 @@ export default function CategoryCard ({ categoryName }) {
   return (
     <Link
       to='/'
-      className='card w-full bg-slate-800 mt-8 cursor-pointer rounded-2xl mx-auto'
+      className='card w-8/12 bg-slate-800 mt-8 cursor-pointer rounded-2xl mx-auto'
     >
       <div className='overlay'></div>
       <div className='circle'>

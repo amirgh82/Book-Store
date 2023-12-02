@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 640px) {
   .container {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
 }
 @media screen and (max-width: 490px) {
