@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import Index from './pages/Index/Index'
+import { useRoutes } from 'react-router-dom'
+import routes from './routes'
 
 function App () {
-  return (
-    <>
-      <Index />
-    </>
-  )
+  const router = useRoutes(routes)
+  return <>{router}</>
 }
 
 export default App
