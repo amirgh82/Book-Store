@@ -11,17 +11,17 @@ export default function Landing () {
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .pauseFor(200)
+                .pauseFor(10)
                 .typeString('باندلس بوک بزرگ ترین فروشگاه کتاب های جنایی')
                 .start()
             }}
           />
         </h2>
-        <p className='content-desc text-2xl max-[786px]:text-sm'>
+        <p className='content-desc text-3xl  max-[786px]:text-sm'>
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .pauseFor(100)
+                .pauseFor(10)
                 .typeString(
                   'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
                 )

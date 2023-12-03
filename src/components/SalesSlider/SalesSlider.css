@@ -2,6 +2,11 @@
   font-family: var(--def-font);
 }
 
+
+.card-book-desc{
+  font-family: normal;
+}
+
 .swiper-pagination{
     bottom: 352px !important;
 }

@@ -6,7 +6,7 @@ export default function Footer () {
     <footer className='footer mt-11 bg-slate-900 w-full text-white'>
       <div className='container flex justify-between flex-wrap text-right py-7'>
         <div className='footer-access'>
-          <h6 className='footer-title text-lg mb-5'>دسترسی سریع</h6>
+          <h6 className='footer-title mb-5'>دسترسی سریع</h6>
           <ul className='footer-access-lists'>
             <li className='footer-access-list py-1'>
               <Link
@@ -44,7 +44,7 @@ export default function Footer () {
         </div>
 
         <div className='footer-about w-5/12 max-[768px]:w-full max-[768px]:py-4'>
-          <h6 className='footer-title text-lg mb-5'>درباره ما</h6>
+          <h6 className='footer-title mb-5'>درباره ما</h6>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
@@ -54,7 +54,7 @@ export default function Footer () {
         </div>
 
         <div className='footer-contact'>
-          <h6 className='footer-title text-lg mb-5'>تماس با ما</h6>
+          <h6 className='footer-title mb-5'>تماس با ما</h6>
           <p>تهران - سعادت آباد </p>
         </div>
       </div>

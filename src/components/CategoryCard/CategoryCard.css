@@ -91,6 +91,6 @@
 }
 
 .card p {
-  font-family: font;
-  font-size: 25px;
+  font-family: var(--def-font);
+  font-size: 40px;
 }

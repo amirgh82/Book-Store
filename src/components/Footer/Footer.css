@@ -1,14 +1,19 @@
 .footer-title {
   font-family: var(--def-font);
+  font-size: 25px;
   position: relative;
 }
 
 .footer-title::before {
   content: '';
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 0;
   width: 100%;
   height: 2px;
-  background-color: #0b2232;
+  background-color: #60b6f377;
+}
+
+.footer-title + p , .footer-access-link{
+font-family: normal;
 }
