@@ -51,10 +51,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title text-2xl  mb-2 block leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -83,10 +83,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class=' card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class=' card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -115,10 +115,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -147,10 +147,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -179,10 +179,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -211,10 +211,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -243,10 +243,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>
@@ -275,10 +275,10 @@ export default function SalesSlider ({ componentTitle }) {
               />
             </div>
             <div class='p-6'>
-              <h5 class='mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
+              <h5 class='card-book-title mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased'>
                 اثر مرکب
               </h5>
-              <p class='block text-base font-light leading-relaxed text-inherit antialiased'>
+              <p class='card-book-desc block text-base font-light leading-relaxed text-inherit antialiased'>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است
               </p>

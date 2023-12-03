@@ -11,17 +11,17 @@ export default function Landing () {
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .pauseFor(200)
+                .pauseFor(10)
                 .typeString('باندلس بوک بزرگ ترین فروشگاه کتاب های جنایی')
                 .start()
             }}
           />
         </h2>
-        <p className='content-desc text-2xl max-[786px]:text-sm'>
+        <p className='content-desc text-3xl  max-[786px]:text-sm'>
           <Typewriter
             onInit={typewriter => {
               typewriter
-                .pauseFor(100)
+                .pauseFor(10)
                 .typeString(
                   'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است'
                 )
@@ -30,13 +30,13 @@ export default function Landing () {
           />
         </p>
       </div>
-      <div className='content-input mt-24 relative flex items-center w-6/12'>
+      <div className='content-input mt-24 relative flex items-center w-4/12 max-[800px]:w-10/12'>
         <input
           type='text'
           name=''
           id=''
           placeholder='دنبال چی می گردی؟'
-          className=' border-none text-slate-800 outline-cyan-800 w-full rounded-2xl p-2 placeholder:text-slate-800 max-[450px]:w-72'
+          className=' border-none text-slate-800 outline-cyan-800 w-full rounded-2xl p-2 placeholder:text-slate-800'
         />
         <button className=' text-slate-900 absolute left-0 px-2 text-2xl'>
           <FaSearch />

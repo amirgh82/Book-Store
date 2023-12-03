@@ -1,26 +1,35 @@
 @import './reset.css';
 
 @font-face {
-  font-family: font;
-  src: url(/src/assets/fonts/B\ Koodak\ Bold_0.ttf);
+  font-family: kamrn;
+  src: url(/src/assets/fonts/Far_KamrnBd.ttf);
 }
 
 @font-face {
   font-family: logo;
   src: url(/src/assets/fonts/NothingYouCouldDo-Regular.ttf);
 }
-@font-face {
-  font-family: test;
-  src: url(/src/assets/fonts/AGhasem.ttf);
-}
+
 
 @font-face {
-  font-family: yekan;
+  font-family: casebalance;
+  src: url(/src/assets/fonts/Far_Casablanca.ttf);
+}
+@font-face {
+  font-family: dastnevis;
+  src: url(/src/assets/fonts/Far_DastNevis.otf);
+}
+@font-face {
+  font-family: rezvan;
+  src: url(/src/assets/fonts/Rezvan.ttf);
+}
+@font-face {
+  font-family: normal;
   src: url(/src/assets/fonts/Yekan.ttf);
 }
 
 :root {
-  --def-font: font;
+  --def-font: kamrn;
   --bg-color: #1e293b;
   --bg-color-light: #f0e7ff;
   --text-color-hover: #fff;
@@ -43,11 +52,11 @@
 }
 @media screen and (max-width: 640px) {
   .container {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
 }
 @media screen and (max-width: 490px) {
   .container {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
