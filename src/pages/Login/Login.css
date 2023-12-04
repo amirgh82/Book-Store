@@ -1,0 +1,7 @@
+.form-container h2{
+  font-family: var(--def-font);
+}
+
+.form , .to-register{
+  font-family: casebalance;
+}
