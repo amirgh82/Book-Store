@@ -13,13 +13,13 @@ export default function Login () {
             label='شماره تماس'
             type='number'
             name='phone'
-            placeholder='شماره تماس'
+            placeholder='09121111111'
           />
           <Input
             label='رمز عبور'
             type='password'
             name='password'
-            placeholder='رمز عبور'
+            placeholder='********'
           />
           <span className='text-white mt-3 text-sm'>
             <Link to='/'>رمز عبور خود را فراموش کرید ؟</Link>
