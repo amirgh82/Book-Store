@@ -3,7 +3,7 @@ import './Input.css'
 export default function ({ label, type, name, placeholder }) {
   return (
     <>
-      <div className='input-container flex flex-col w-full text-white'>
+      <div className='input-container flex flex-col w-full text-white max-[600px]:w-full'>
         <label className='mb-1 mt-6 text-lg'>{label}</label>
         <input
           type={type}
