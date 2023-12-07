@@ -3,11 +3,11 @@ import './Login.css'
 import Input from '../../components/Form/Input/Input'
 import Button from '../../components/Form/Button/Button'
 import { Link } from 'react-router-dom'
+import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 export default function Login () {
   return (
     <div className="login-page bg-[url('/src/assets/images/interior_night.jpg')] bg-center bg-cover w-full h-screen overflow-hidden">
-      <div className='form-container w-[480px] h-[70vh] absolute inset-0 m-auto bg-[#ffffff2b] rounded-3xl shadow-md backdrop-blur overflow-hidden flex justify-center items-center flex-col max-[600px]:w-3/4'>
-        <h2 className='text-white text-5xl'>ورود</h2>
+      <FormConstractor title='ورود'>
         <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
           <Input
             label='شماره تماس'
@@ -32,7 +32,7 @@ export default function Login () {
             ثبت نام
           </Link>
         </span>
-      </div>
+      </FormConstractor>
     </div>
   )
 }
