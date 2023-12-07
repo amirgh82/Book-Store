@@ -26,7 +26,7 @@ export default function Footer () {
             </li>
             <li className='footer-access-list py-1'>
               <Link
-                to='/'
+                to='/login'
                 className='footer-access-link hover:text-cyan-500 transition-colors delay-100'
               >
                 ثبت نام / ورود
