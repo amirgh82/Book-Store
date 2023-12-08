@@ -1,6 +1,6 @@
 import React from 'react'
 import './Input.css'
-export default function ({ label, type, name, placeholder }) {
+export default function ({ label, type, name, placeholder, onChange }) {
   return (
     <>
       <div className='input-container flex flex-col w-full text-white max-[600px]:w-full'>
@@ -10,6 +10,8 @@ export default function ({ label, type, name, placeholder }) {
           name={name}
           placeholder={placeholder}
           className='text-slate-700 p-2 placeholder:text-sm placeholder:text-slate-700 placeholder:px-2 border-none outline-white'
+          required
+          onChange={() => onChange(event)}
         />
       </div>
     </>
