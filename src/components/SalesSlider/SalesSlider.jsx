@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 
 export default function SalesSlider ({ componentTitle }) {
   return (
-    <div className='container sliders h-auto mt-8'>
+    <div className='container sliders h-auto my-8'>
       <ComponentTitle title={componentTitle} />
       <Swiper
         slidesPerView={1}
