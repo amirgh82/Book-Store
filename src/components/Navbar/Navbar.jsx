@@ -36,7 +36,7 @@ export default function Navbar () {
             <Link to='/category' className='nav-link mx-7 flex items-center'>
               دسته بندی ها
             </Link>
-            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600'>
+            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600 z-40'>
               <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
                 <Link className='nav-submenu-link w-full'>تست 1</Link>
               </li>
