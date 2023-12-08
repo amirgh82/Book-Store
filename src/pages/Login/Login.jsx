@@ -4,9 +4,12 @@ import Input from '../../components/Form/Input/Input'
 import Button from '../../components/Form/Button/Button'
 import { Link } from 'react-router-dom'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 export default function Login () {
   return (
-    <div className="login-page bg-[url('/src/assets/images/interior_night.jpg')] bg-center bg-cover w-full h-screen overflow-hidden">
+    <div className="login-page bg-[url('/src/assets/images/interior_night.jpg')] bg-center bg-cover w-full h-screen ">
+      <Navbar />
       <FormConstractor title='ورود'>
         <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
           <Input
@@ -33,6 +36,7 @@ export default function Login () {
           </Link>
         </span>
       </FormConstractor>
+      <Footer />
     </div>
   )
 }

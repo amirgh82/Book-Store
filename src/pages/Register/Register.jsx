@@ -4,9 +4,12 @@ import FormConstractor from '../../components/Form/FormConstractor/FormConstract
 import Input from '../../components/Form/Input/Input'
 import { Link } from 'react-router-dom'
 import Button from '../../components/Form/Button/Button'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 export default function Register () {
   return (
-    <div className="register-page bg-[url('/src/assets/images/bookcas.jpg')] bg-center bg-cover w-full h-screen overflow-hidden">
+    <div className="register-page bg-[url('/src/assets/images/bookcas.jpg')] bg-center bg-cover w-full h-screen">
+      <Navbar />
       <FormConstractor title='ثبت نام'>
         <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
           <Input
@@ -36,6 +39,7 @@ export default function Register () {
           </Link>
         </span>
       </FormConstractor>
+      <Footer/>
     </div>
   )
 }

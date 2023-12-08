@@ -3,7 +3,7 @@ import './Footer.css'
 import { Link } from 'react-router-dom'
 export default function Footer () {
   return (
-    <footer className='footer mt-11 bg-slate-900 w-full text-white'>
+    <footer className='footer bg-slate-900 w-full text-white'>
       <div className='container flex justify-between flex-wrap text-right py-7'>
         <div className='footer-access'>
           <h6 className='footer-title mb-5'>دسترسی سریع</h6>
