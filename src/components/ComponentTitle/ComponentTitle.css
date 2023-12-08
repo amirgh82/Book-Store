@@ -35,3 +35,8 @@
     left: -15px;
   }
 }
+@media screen and (max-width: 300px){
+  .title{
+    width: 150px;
+  }
+}

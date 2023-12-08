@@ -36,25 +36,35 @@
 }
 
 .container {
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-family: yekan;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1280px) {
   .container {
     padding: 0 2rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
   .container {
     padding: 0 3rem;
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 300px) {
   .container {
     padding: 0 1rem;
   }
