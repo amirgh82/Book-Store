@@ -1,0 +1,7 @@
+.card-book-img {
+  transition: all 0.3s ease-in-out;
+}
+.card-book:hover .card-book-img {
+  margin: -1.5rem 1rem 0 1rem;
+  border-radius: 1rem;
+}

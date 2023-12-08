@@ -2,16 +2,15 @@
   font-family: var(--def-font);
 }
 
-
-.card-book-desc{
+.card-book-desc {
   font-family: normal;
 }
 
-.swiper-pagination{
-    bottom: 352px !important;
+.swiper-pagination {
+  bottom: 0px !important;
 }
 
-.swiper-pagination-bullet{
-    background-color: #1E293B !important;
-
+.swiper-pagination-bullet {
+  background-color: rgb(59 130 246 1) !important;
+  opacity: 1 !important;
 }

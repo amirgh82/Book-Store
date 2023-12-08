@@ -6,6 +6,7 @@ import Category from '../../components/Category/Category'
 import Banner from '../../components/Banner/Banner'
 import SalesSlider from '../../components/SalesSlider/SalesSlider'
 import Footer from '../../components/Footer/Footer'
+import NewBook from '../../components/NewBook/NewBook'
 
 export default function Index () {
   return (
@@ -14,8 +15,8 @@ export default function Index () {
       <Landing />
       <Category />
       <Banner />
+      <NewBook />
       <SalesSlider componentTitle='پرفروش ترین کتاب ها' />
-      <SalesSlider componentTitle='جدیدترین کتاب ها' />
       <Footer />
     </>
   )
