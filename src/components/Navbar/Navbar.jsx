@@ -17,7 +17,7 @@ export default function Navbar () {
     <div className='m-auto'>
       {/* Start menu in desktop size */}
 
-      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-8'>
+      <nav className='flex justify-around items-center w-full bg-slate-800 text-white py-5'>
         <RiMenu4Fill
           onClick={() => setIsShowMenu(true)}
           className='text-5xl hidden cursor-pointer max-[768px]:block'
