@@ -1,6 +1,6 @@
 // phone regex
 const testPhone = value => {
-  const phoneParent = /^0?9\d{10}$/
+  const phoneParent = /^09\d{9}$/
   return phoneParent.test(value)
 }
 

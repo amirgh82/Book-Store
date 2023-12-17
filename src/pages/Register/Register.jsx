@@ -26,15 +26,20 @@ export default function Register () {
       phoneValidation &&
       passwordValidation &&
       repeatpasswordValidation &&
-      passwordValidation === repeatpasswordValidation
+      passwordValue === repeatPasswordValue
     ) {
       setIsFormValid(true)
     } else {
       setIsFormValid(false)
     }
-  }, [phoneValidation, passwordValidation, repeatpasswordValidation])
+  }, [
+    phoneValidation,
+    passwordValidation,
+    repeatpasswordValidation,
+    passwordValue,
+    repeatPasswordValue
+  ])
 
-  
   // register
   const userRegister = event => {
     event.preventDefault()

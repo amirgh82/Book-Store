@@ -2,18 +2,18 @@ import React, { useState } from 'react'
 import './Input.css'
 import regex from '../../../regex'
 export default function ({ label, type, name, placeholder, onValidation }) {
-  const [isValid, setIsValid] = useState(false)
   const [inputValue, setInputValue] = useState('')
 
   const inputValidation = event => {
     let inputValue = event.target.value.trim()
     setInputValue(inputValue)
 
+    let isValid
     if (type === 'number') {
-      setIsValid(regex.testPhone(inputValue))
+      isValid = regex.testPhone(inputValue)
     }
     if (type === 'password') {
-      setIsValid(regex.testPassword(inputValue))
+      isValid = regex.testPassword(inputValue)
     }
 
     onValidation(inputValue, isValid)
