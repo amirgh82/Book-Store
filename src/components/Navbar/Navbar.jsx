@@ -32,11 +32,12 @@ export default function Navbar () {
             </Link>
             <span></span>
           </li>
-          <li className='nav-list relative'>
+          <li className='nav-list nav-sub relative'>
             <Link to='/category' className='nav-link mx-7 flex items-center'>
               دسته بندی ها
             </Link>
-            <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600 z-40'>
+            {/* <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600 z-40 transition-all delay-300'> */}
+            <ul className='nav-submenu rounded-2xl absolute w-52 bg-slate-600 z-40'>
               <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
                 <Link className='nav-submenu-link w-full'>تست 1</Link>
               </li>
@@ -95,9 +96,9 @@ export default function Navbar () {
             </span>
             {isShowCategory ? (
               <ul
-                className={`nav-submenu ${
-                  isShowCategory ? 'block' : ''
-                }  w-full rounded-2xl bg-slate-600 px-2 overflow-hidden mt-2`}
+                className={`nav-submenu nav-submenu-mobile ${
+                  isShowCategory ? 'h-fit' : 'h-0'
+                }  w-full rounded-2xl bg-slate-600 px-2 mt-2`}
               >
                 <li className=' mt-2 cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1 rounded-md'>
                   <Link className='nav-submenu-link w-full'>تست 1</Link>

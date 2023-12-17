@@ -2,6 +2,17 @@ nav {
   font-family: casebalance;
 }
 
+.nav-submenu {
+  top: -800px;
+  right: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-sub:hover .nav-submenu {
+  top: 1.75rem;
+}
+
+
 .burger input {
   display: none;
 }
@@ -79,14 +90,6 @@ nav {
 
 .nav-link:hover .arrow {
   transform: rotate(270deg);
-}
-
-.nav-submenu {
-  display: none;
-}
-
-.nav-list:hover > .nav-submenu {
-  display: block;
 }
 
 .login:before {

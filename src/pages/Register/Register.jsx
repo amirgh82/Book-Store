@@ -53,7 +53,7 @@ export default function Register () {
   return (
     <>
       <Navbar />
-      <div className="register-page bg-[url('/src/assets/images/bookcas.jpg')] bg-center bg-cover w-full h-screen pt-20">
+      <div className="register-page bg-[url('/src/assets/images/bookcas.jpg')] bg-center bg-cover w-full h-screen py-20">
         <FormConstractor title='ثبت نام'>
           <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
             <Input
