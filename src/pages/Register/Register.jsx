@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Register.css'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 import Input from '../../components/Form/Input/Input'
@@ -6,11 +6,48 @@ import { Link } from 'react-router-dom'
 import Button from '../../components/Form/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-export default function Register () {
-  const [phoneNumber, setPhoneNumber] = useState(null)
 
-  const onChangePhone = event => {
-    console.log(event.target.value)
+export default function Register () {
+  // inputs validation
+  const [phoneValidation, setPhoneValidation] = useState(false)
+  const [phoneValue, setPhoneValue] = useState('')
+  const [passwordValidation, setPasswordValidation] = useState(false)
+  const [passwordValue, setPasswordValue] = useState('')
+  const [repeatpasswordValidation, setRepeatPasswordValidation] =
+    useState(false)
+  const [repeatPasswordValue, setrepeatPasswordValue] = useState('')
+
+  // form validation
+  const [isFormValid, setIsFormValid] = useState(false)
+
+  // useEffect for set form validation
+  useEffect(() => {
+    if (
+      phoneValidation &&
+      passwordValidation &&
+      repeatpasswordValidation &&
+      passwordValue === repeatPasswordValue
+    ) {
+      setIsFormValid(true)
+    } else {
+      setIsFormValid(false)
+    }
+  }, [
+    phoneValidation,
+    passwordValidation,
+    repeatpasswordValidation,
+    passwordValue,
+    repeatPasswordValue
+  ])
+
+  // register
+  const userRegister = event => {
+    event.preventDefault()
+    if (isFormValid) {
+      console.log('click')
+    } else {
+      console.log('not valid')
+    }
   }
 
   return (
@@ -24,21 +61,36 @@ export default function Register () {
               type='number'
               name='phone'
               placeholder='09121111111'
-              onChange={onChangePhone(event)}
+              onValidation={(inputValue, isValid) => {
+                setPhoneValidation(isValid)
+                setPhoneValue(inputValue)
+              }}
             />
             <Input
               label='رمز عبور'
               type='password'
               name='password'
               placeholder='* * * * * * * *'
+              onValidation={(inputValue, isValid) => {
+                setPasswordValidation(isValid)
+                setPasswordValue(inputValue)
+              }}
             />
             <Input
               label='تایید رمز عبور'
               type='password'
               name='password'
               placeholder='* * * * * * * *'
+              onValidation={(inputValue, isValid) => {
+                setRepeatPasswordValidation(isValid)
+                setrepeatPasswordValue(inputValue)
+              }}
             />
-            <Button text='ثبت نام' />
+            <Button
+              type='submit'
+              text='ثبت نام'
+              onSubmitForm={() => userRegister(event)}
+            />
           </form>
           <span className='to-register mt-8 text-white'>
             حساب کاربری دارم :

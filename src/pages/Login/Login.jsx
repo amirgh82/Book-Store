@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 import Input from '../../components/Form/Input/Input'
 import Button from '../../components/Form/Button/Button'
@@ -6,7 +6,34 @@ import { Link } from 'react-router-dom'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import { useEffect } from 'react'
 export default function Login () {
+  // inputs validation
+  const [phoneValidation, setPhoneValidation] = useState(false)
+  const [phoneValue, setPhoneValue] = useState('')
+  const [passwordValidation, setPasswordValidation] = useState(false)
+  const [passwordValue, setPasswordValue] = useState('')
+
+  // form validation
+  const [isFormValid, setIsFormValid] = useState(false)
+
+  useEffect(() => {
+    if (passwordValidation && phoneValidation) {
+      setIsFormValid(true)
+    } else {
+      setIsFormValid(false)
+    }
+  }, [phoneValidation, passwordValidation])
+
+  const userLogin = event => {
+    event.preventDefault()
+    if (isFormValid) {
+      console.log('login')
+    } else {
+      console.log('not login')
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -18,17 +45,25 @@ export default function Login () {
               type='number'
               name='phone'
               placeholder='09121111111'
+              onValidation={(inputValue, isValid) => {
+                setPhoneValue(inputValue)
+                setPhoneValidation(isValid)
+              }}
             />
             <Input
               label='رمز عبور'
               type='password'
               name='password'
               placeholder='* * * * * * * *'
+              onValidation={(inputValue, isValid) => {
+                setPasswordValidation(isValid)
+                setPasswordValue(inputValue)
+              }}
             />
             <span className='text-white mt-3 text-sm'>
               <Link to='/'>رمز عبور خود را فراموش کرید ؟</Link>
             </span>
-            <Button text='ورود' />
+            <Button text='ورود' onSubmitForm={() => userLogin(event)} />
           </form>
           <span className='to-register mt-8 text-white'>
             حساب کاربری ندارم :{' '}
