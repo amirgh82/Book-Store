@@ -7,6 +7,7 @@ import FormConstractor from '../../components/Form/FormConstractor/FormConstract
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import { useEffect } from 'react'
+import axios from 'axios'
 export default function Login () {
   // inputs validation
   const [phoneValidation, setPhoneValidation] = useState(false)
@@ -27,8 +28,19 @@ export default function Login () {
 
   const userLogin = event => {
     event.preventDefault()
+
+    console.log(phoneValue)
+    console.log(passwordValue)
+
     if (isFormValid) {
-      console.log('login')
+      axios
+        .post('http://localhost:5000/api/Auth/Login', {
+          phoneNumber: phoneValue,
+          password: passwordValue
+        })
+        .then(response => {
+          console.log(response)
+        })
     } else {
       console.log('not login')
     }
@@ -42,7 +54,7 @@ export default function Login () {
           <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
             <Input
               label='شماره تماس'
-              type='number'
+              type='text'
               name='phone'
               placeholder='09121111111'
               onValidation={(inputValue, isValid) => {

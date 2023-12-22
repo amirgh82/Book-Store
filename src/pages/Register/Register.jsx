@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './Register.css'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 import Input from '../../components/Form/Input/Input'
-import { Link } from 'react-router-dom'
+import { Link, json } from 'react-router-dom'
 import Button from '../../components/Form/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
+import axios from 'axios'
 
 export default function Register () {
   // inputs validation
@@ -44,7 +45,18 @@ export default function Register () {
   const userRegister = event => {
     event.preventDefault()
     if (isFormValid) {
-      console.log('click')
+      axios
+        .post('http://localhost:5000/api/Auth/Register', {
+          phoneNumber: phoneValue,
+          password: passwordValue,
+          rePassword: repeatPasswordValue
+        })
+        .then(res => {
+          console.log(res)
+        })
+        .catch(err => {
+          console.log('error', err.message)
+        })
     } else {
       console.log('not valid')
     }
@@ -58,7 +70,7 @@ export default function Register () {
           <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
             <Input
               label='شماره تماس'
-              type='number'
+              type='text'
               name='phone'
               placeholder='09121111111'
               onValidation={(inputValue, isValid) => {

@@ -36,8 +36,7 @@ export default function Navbar () {
             <Link to='/category' className='nav-link mx-7 flex items-center'>
               دسته بندی ها
             </Link>
-            {/* <ul className='nav-submenu rounded-2xl overflow-hidden absolute top-7 right-4 w-52 bg-slate-600 z-40 transition-all delay-300'> */}
-            <ul className='nav-submenu rounded-2xl absolute w-52 bg-slate-600 z-40'>
+            <ul className='nav-submenu rounded-2xl absolute w-52 bg-slate-600 z-40 overflow-hidden'>
               <li className=' cursor-pointer w-full hover:bg-slate-400 my-2 py-1 pr-1'>
                 <Link className='nav-submenu-link w-full'>تست 1</Link>
               </li>
@@ -96,7 +95,7 @@ export default function Navbar () {
             </span>
             {isShowCategory ? (
               <ul
-                className={`nav-submenu nav-submenu-mobile ${
+                className={`nav-submenu nav-submenu-mobile overflow-hidden ${
                   isShowCategory ? 'h-fit' : 'h-0'
                 }  w-full rounded-2xl bg-slate-600 px-2 mt-2`}
               >

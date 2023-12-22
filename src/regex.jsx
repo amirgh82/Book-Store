@@ -6,7 +6,7 @@ const testPhone = value => {
 
 // password regex
 const testPassword = value => {
-  const passwordParent = /^(?=.*[a-zA-Z0-9])[a-zA-Z0-9]{8,20}$/g
+  const passwordParent = /^(?=.*[a-zA-Z0-9])[a-zA-Z0-9]{6,20}$/g
   return passwordParent.test(value)
 }
 
