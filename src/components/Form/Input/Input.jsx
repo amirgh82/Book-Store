@@ -9,7 +9,7 @@ export default function ({ label, type, name, placeholder, onValidation }) {
     setInputValue(inputValue)
 
     let isValid
-    if (type === 'number') {
+    if (type === 'text') {
       isValid = regex.testPhone(inputValue)
     }
     if (type === 'password') {
