@@ -70,7 +70,7 @@ export default function Register () {
           <form className='form flex flex-col justify-around w-full px-16 mt-10 max-[600px]:px-8 max-[600px]:mt-1'>
             <Input
               label='شماره تماس'
-              type='text'
+              type='number'
               name='phone'
               placeholder='09121111111'
               onValidation={(inputValue, isValid) => {
