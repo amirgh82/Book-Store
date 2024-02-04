@@ -8,4 +8,3 @@ export default function FormConstractor ({ children, title }) {
     </div>
   )
 }
-// bg-[#ffffff2b] rounded-3xl shadow-md backdrop-blur

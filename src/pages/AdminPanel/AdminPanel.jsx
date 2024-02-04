@@ -9,8 +9,9 @@ export default function AdminPanel () {
       <div className='sidebar'>
         <Sidebar />
       </div>
-      <div className='' id='home '>
+      <div className='home' id='home '>
         <Topbar />
+        <Outlet />
       </div>
     </div>
   )
