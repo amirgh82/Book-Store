@@ -1,14 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
+
 import './Login.css'
+
 import Input from '../../components/Form/Input/Input'
 import Button from '../../components/Form/Button/Button'
-import { Link } from 'react-router-dom'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
-import { useEffect } from 'react'
-import axios from 'axios'
+
+import AuthContext from '../../Contexts/authContext'
+
 export default function Login () {
+  const authContext = useContext(AuthContext)
+
   // inputs validation
   const [phoneValidation, setPhoneValidation] = useState(false)
   const [phoneValue, setPhoneValue] = useState('')
@@ -39,7 +45,7 @@ export default function Login () {
           password: passwordValue
         })
         .then(response => {
-          console.log(response)
+          authContext.login(response.data.data.token)
         })
     } else {
       console.log('not login')
