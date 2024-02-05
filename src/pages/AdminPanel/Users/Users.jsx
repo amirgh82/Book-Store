@@ -15,6 +15,8 @@ export default function Users () {
   const [password, setPassword] = useState('')
   const [gender, setGender] = useState(0)
 
+  const [isShowModal, setIsShowModal] = useState(false)
+
   // form validation
   const [isFormValid, setIsFormValid] = useState(false)
 
@@ -24,19 +26,13 @@ export default function Users () {
       lastNameValid &&
       emailValid &&
       phoneValid &&
-      passwordValid 
+      passwordValid
     ) {
       setIsFormValid(true)
     } else {
       setIsFormValid(false)
     }
-  }, [
-    firstNameValid,
-    lastNameValid,
-    emailValid,
-    phoneValid,
-    passwordValid,
-  ])
+  }, [firstNameValid, lastNameValid, emailValid, phoneValid, passwordValid])
 
   const addNewUser = event => {
     event.preventDefault()
@@ -44,7 +40,7 @@ export default function Users () {
     const userDetail = {
       firstName,
       lastName,
-      phoneNumber:String(phone) ,
+      phoneNumber: String(phone),
       email,
       password,
       gender
@@ -58,7 +54,7 @@ export default function Users () {
   }
 
   return (
-    <div className='users-container bg-gray-600 w-full '>
+    <div className='users-container bg-slate-700 w-full '>
       <div className='users-form  py-10 w-full'>
         <form className='grid grid-cols-3 gap-2 '>
           <Input
@@ -122,7 +118,7 @@ export default function Users () {
               name='gender'
               required
               id='gender'
-              className='text-black'
+              className='text-black rounded-2xl px-3 py-1 mx-2'
               onChange={event => {
                 setGender(event.target.value)
               }}
@@ -138,6 +134,66 @@ export default function Users () {
             onSubmitForm={() => addNewUser(event)}
           />
         </form>
+      </div>
+
+      <div className='user-table text-white w-full border-t-2 border-gray-500 border-solid 	'>
+        <table className='min-w-full border border-gray-300'>
+          <thead>
+            <tr>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                نام
+              </th>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                نام خانوادگی
+              </th>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                ایمیل
+              </th>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                شماره تماس
+              </th>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                جنسیت
+              </th>
+              <th className='py-2 px-4 border-b-2 border-x-2 border-gray-400 border-solid'>
+                عملیات
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                امیررضا{' '}
+              </td>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                قربانی{' '}
+              </td>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                amirghhastam@gmail.com{' '}
+              </td>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                09036700972{' '}
+              </td>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                مرد{' '}
+              </td>
+              <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
+                <button
+                  className='bg-blue-500 text-white px-2 py-1 rounded'
+
+                >
+                  ویرایش
+                </button>
+                <button
+                  className='bg-red-500 text-white px-2 py-1 rounded'
+
+                >
+                  حذف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   )
