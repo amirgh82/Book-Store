@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import './Register.css'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
 import Input from '../../components/Form/Input/Input'
-import { Link, json } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Button from '../../components/Form/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import axios from 'axios'
 
 export default function Register () {
+  const navigate = useNavigate()
   // inputs validation
   const [phoneValidation, setPhoneValidation] = useState(false)
   const [phoneValue, setPhoneValue] = useState('')
@@ -53,6 +54,7 @@ export default function Register () {
         })
         .then(res => {
           console.log(res)
+          navigate('/')
         })
         .catch(err => {
           console.log('error', err.message)

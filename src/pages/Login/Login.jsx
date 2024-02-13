@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
-
 import './Login.css'
-
 import Input from '../../components/Form/Input/Input'
 import Button from '../../components/Form/Button/Button'
 import FormConstractor from '../../components/Form/FormConstractor/FormConstractor'
@@ -11,9 +9,11 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 
 import AuthContext from '../../Contexts/authContext'
+import Swal from 'sweetalert2'
 
 export default function Login () {
   const authContext = useContext(AuthContext)
+  const navigate = useNavigate()
 
   // inputs validation
   const [phoneValidation, setPhoneValidation] = useState(false)
@@ -46,9 +46,21 @@ export default function Login () {
         })
         .then(response => {
           authContext.login(response.data.data.token)
+          console.log(response)
+          Swal.fire({
+            title: 'ورود موفقیت آمیز بود ',
+            icon: 'success',
+            confirmButtonText: 'حله داوشم'
+          }).then(result => {
+            navigate('/')
+          })
         })
     } else {
-      console.log('not login')
+      Swal.fire({
+        title: 'ورود موفقیت آمیز نبود ',
+        icon: 'error',
+        buttonsStyling: 'تلاش دوباره'
+      })
     }
   }
 
