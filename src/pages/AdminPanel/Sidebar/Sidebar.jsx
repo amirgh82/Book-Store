@@ -39,6 +39,16 @@ export default function Sidebar () {
               تخفیف ها
             </Link>
           </li>
+          <li className='mt-3 hover:bg-slate-500 w-full p-2 block rounded-lg'>
+            <Link to='banners' className='sidebar-link'>
+               بنر ها
+            </Link>
+          </li>
+          <li className='mt-3 hover:bg-slate-500 w-full p-2 block rounded-lg'>
+            <Link to='comments' className='sidebar-link'>
+               کامنت ها
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
