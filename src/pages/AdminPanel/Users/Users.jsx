@@ -54,7 +54,7 @@ export default function Users () {
   }
 
   return (
-    <div className='users-container bg-slate-700 w-full '>
+    <div className='users-containe bg-sky-900 w-full '>
       <div className='users-form  py-10 w-full'>
         <form className='grid grid-cols-3 gap-2 '>
           <Input
@@ -178,16 +178,10 @@ export default function Users () {
                 مرد{' '}
               </td>
               <td className='py-2 px-14 border-b-2 border-x-2 border-gray-400 border-solid'>
-                <button
-                  className='bg-blue-500 text-white px-2 py-1 rounded'
-
-                >
+                <button className='bg-blue-500 text-white px-2 py-1 rounded'>
                   ویرایش
                 </button>
-                <button
-                  className='bg-red-500 text-white px-2 py-1 rounded'
-
-                >
+                <button className='bg-red-500 text-white px-2 py-1 rounded'>
                   حذف
                 </button>
               </td>
